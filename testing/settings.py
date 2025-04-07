@@ -1,7 +1,6 @@
 
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -11,10 +10,6 @@ SECRET_KEY = 'django-insecure-!%rwwi4f=@cubhquwnaud*)6(%mox!)=dz1b&&vo1f1svd9s&1
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -53,21 +48,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'testing.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
-# Password validation
-# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
